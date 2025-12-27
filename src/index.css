@@ -1,0 +1,177 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 340 30% 98%;
+    --foreground: 0 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 15% 15%;
+    --primary: 0 45% 35%;
+    --primary-foreground: 340 100% 98%;
+    --primary-glow: 340 70% 60%;
+    --secondary: 340 70% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 340 20% 95%;
+    --muted-foreground: 0 10% 45%;
+    --accent: 340 70% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --border: 340 20% 90%;
+    --input: 340 20% 90%;
+    --ring: 0 45% 35%;
+    --chart-1: 0 45% 35%;
+    --chart-2: 340 70% 60%;
+    --chart-3: 320 60% 50%;
+    --chart-4: 350 80% 70%;
+    --chart-5: 10 50% 45%;
+    --sidebar-background: 340 30% 98%;
+    --sidebar-foreground: 0 15% 15%;
+    --sidebar-primary: 0 45% 35%;
+    --sidebar-primary-foreground: 340 100% 98%;
+    --sidebar-accent: 340 20% 95%;
+    --sidebar-accent-foreground: 0 15% 15%;
+    --sidebar-border: 340 20% 90%;
+    --sidebar-ring: 0 45% 35%;
+    --destructive-foreground: 210 40% 98%;
+    --gradient-primary: linear-gradient(135deg, hsl(0 45% 35%), hsl(340 70% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(340 30% 98%), hsl(340 20% 95%));
+    --shadow-elegant: 0 10px 30px -10px hsl(0 45% 35% / 0.2);
+    --shadow-glow: 0 0 40px hsl(340 70% 60% / 0.3);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 0 20% 10%;
+    --foreground: 340 30% 95%;
+    --card: 0 20% 12%;
+    --card-foreground: 340 30% 95%;
+    --popover: 0 20% 12%;
+    --popover-foreground: 340 30% 95%;
+    --primary: 340 70% 60%;
+    --primary-foreground: 0 20% 10%;
+    --primary-glow: 340 80% 70%;
+    --secondary: 0 45% 35%;
+    --secondary-foreground: 340 30% 95%;
+    --muted: 0 15% 20%;
+    --muted-foreground: 340 15% 65%;
+    --accent: 340 70% 60%;
+    --accent-foreground: 0 20% 10%;
+    --destructive: 0 62.8% 30.6%; 
+    --border: 0 15% 20%;
+    --input: 0 15% 20%;
+    --ring: 340 70% 60%;
+    --chart-1: 340 70% 60%;
+    --chart-2: 0 45% 35%;
+    --chart-3: 320 60% 50%;
+    --chart-4: 350 80% 70%;
+    --chart-5: 10 50% 45%;
+    --sidebar-background: 0 20% 10%;
+    --sidebar-foreground: 340 30% 95%;
+    --sidebar-primary: 340 70% 60%;
+    --sidebar-primary-foreground: 0 20% 10%;
+    --sidebar-accent: 0 15% 20%;
+    --sidebar-accent-foreground: 340 30% 95%;
+    --sidebar-border: 0 15% 20%;
+    --sidebar-ring: 340 70% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --gradient-primary: linear-gradient(135deg, hsl(340 70% 60%), hsl(0 45% 35%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 20% 10%), hsl(0 15% 20%));
+    --shadow-elegant: 0 10px 30px -10px hsl(340 70% 60% / 0.3);
+    --shadow-glow: 0 0 40px hsl(340 70% 60% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: hsl(var(--primary)) !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: hsl(var(--secondary)) !important;
+}
+
+.swiper-pagination-bullet {
+  background: hsl(var(--muted-foreground)) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: hsl(var(--primary)) !important;
+}
+
