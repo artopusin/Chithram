@@ -3,7 +3,7 @@ import type { Artwork, Achievement, ArtistInfo } from '@/types/portfolio';
 export const artistInfo: ArtistInfo = {
  "name": "Chithra Kanchi",
   "bio": "I am a passionate artist dedicated to creating meaningful and beautiful works of art. With years of experience in various mediums including oil, watercolor, and mixed media, I strive to capture the essence of emotion and beauty in every piece. My work has been featured in numerous exhibitions and I am committed to sharing my love of art through teaching and community engagement.",
-  "photo": "https://i.postimg.cc/wBRbvTTf/artistimg.jpg",
+  "photo": "/images/portfolio/artist.jpg",
   socialMedia: [
     {
       platform: "Facebook",
@@ -28,7 +28,7 @@ export const artworks: Artwork[] = [
     id: "1",
     name: "Abstract Dreams",
     medium: "Acrylic on Canvas",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/4381e2d2-1d41-44a2-a13f-528223a2d7a9.jpg",
+    image: "/images/portfolio/art1.png",
     description: "A vibrant exploration of color and form, this abstract piece captures the essence of dreams and imagination.",
     shoppingLink: "#"
   },
@@ -36,7 +36,7 @@ export const artworks: Artwork[] = [
     id: "2",
     name: "Modern Expression",
     medium: "Acrylic on Canvas",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/48bc2400-4247-4bb9-9f73-f9078b30363f.jpg",
+    image: "/images/portfolio/art2.png",
     description: "Contemporary art piece showcasing bold colors and dynamic composition.",
     shoppingLink: "#"
   },
@@ -44,7 +44,7 @@ export const artworks: Artwork[] = [
     id: "3",
     name: "Serene Landscape",
     medium: "Watercolor",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/bb43c77e-ac5d-468e-9a3c-901d0c6ce7f7.jpg",
+    image: "/images/portfolio/art3.png",
     description: "A peaceful watercolor landscape capturing the tranquility of nature.",
     shoppingLink: "#"
   },
@@ -52,7 +52,7 @@ export const artworks: Artwork[] = [
     id: "4",
     name: "Portrait Study",
     medium: "Oil on Canvas",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/8843a9bc-d4fd-4145-b461-2470a55d91ac.jpg",
+    image: "/images/portfolio/art4.png",
     description: "An expressive portrait showcasing the depth of human emotion.",
     shoppingLink: "#"
   },
@@ -60,7 +60,7 @@ export const artworks: Artwork[] = [
     id: "5",
     name: "Contemporary Fusion",
     medium: "Mixed Media",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/82691f7f-815a-4130-b2cd-5e14585474d0.jpg",
+    image: "/images/portfolio/art5.png",
     description: "A unique blend of materials and techniques creating a striking visual impact.",
     shoppingLink: "#"
   }
@@ -71,21 +71,21 @@ export const achievements: Achievement[] = [
     id: "1",
     title: "Excellence in Art Award",
     description: "Received recognition for outstanding contribution to contemporary art.",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/89475096-43fa-4744-9559-0550e2bec7df.jpg",
+    image: "/images/portfolio/achievement-1.jpg",
     date: "2024"
   },
   {
     id: "2",
     title: "First Place - Art Competition",
     description: "Won first place in the regional art competition for abstract painting.",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/d3351dcc-120a-42a4-8f64-569cfe6f1fa9.jpg",
+    image: "/images/portfolio/achievement-2.jpg",
     date: "2023"
   },
   {
     id: "3",
     title: "Gallery Exhibition",
     description: "Featured artist at prestigious gallery exhibition showcasing contemporary works.",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/f1320f3c-962d-423c-a469-65555744d2db.jpg",
+    image: "/images/portfolio/achievement-3.jpg",
     date: "2023"
   }
 ];
@@ -93,17 +93,17 @@ export const achievements: Achievement[] = [
 export const artClassImages = [
   {
     id: "1",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/8d83f3f7-a45e-4d55-b631-0e3ab1d39c2e.jpg",
-    alt: "Children learning painting in art class"
+    image: "/images/portfolio/class1.jpeg",
+    alt: "below 12 years art class in session"
   },
   {
     id: "2",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/270d9b87-8204-4cde-8ddb-12284ef3f5db.jpg",
-    alt: "Art workshop with students learning techniques"
+    image: "/images/portfolio/class2.jpeg",
+    alt: "Basics of sketching being taught to students"
   },
   {
     id: "3",
-    image: "https://miaoda-site-img.s3cdn.medo.dev/images/edbf1eea-2cd5-4e87-a335-ae90022f115b.jpg",
+    image: "/images/portfolio/artclass3.jpg",
     alt: "Kids engaged in creative art activities"
   }
 ];
@@ -111,17 +111,17 @@ export const artClassImages = [
 export const youtubeVideos = [
   {
     id: "1",
-    videoId: "dQw4w9WgXcQ",
-    title: "Art Tutorial: Watercolor Techniques"
+    videoId: "8BM7wHBIWGI",
+    title: "Latest art work process"
   },
   {
     id: "2",
-    videoId: "dQw4w9WgXcQ",
-    title: "Behind the Scenes: Creating Abstract Art"
+    videoId: "qOCAoCBTf94",
+    title: "My personal faourite"
   },
   {
     id: "3",
-    videoId: "dQw4w9WgXcQ",
-    title: "Art Class Highlights"
+    videoId: "videoseries?list=PLrjLOmy_ehzGfyzV828v0tQOqsAvqsRFX",
+    title: "Digital Art Series"
   }
 ];
